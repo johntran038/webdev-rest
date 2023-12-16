@@ -100,20 +100,27 @@ onMounted(() => {
 });
 
 // Fetches data from crime API and populates respective data models
-async function initializeCrimes() {
-    return Promise.all([
-        fetchJson(base_url.value + "/incidents"),
-        fetchJson(base_url.value + "/codes"),
-        fetchJson(base_url.value + "/neighborhoods")
-    ]).then(data => {
-        crimes.value = data[0];
-        codes.value = data[1];
-        neighborhoods.value = data[2];
+function initializeCrimes() {
+    Promise.all([
+        fetch(base_url.value + '/codes'), 
+        fetch(base_url.value + '/neighborhoods'), 
+        fetch(base_url.value + '/incidents')
+    ])
+    .then((response) => {
+	    return Promise.all([
+            response[0].json(), 
+            response[1].json(), 
+            response[2].json()
+        ])
+    })
+    .then((data) => {
+        codes.value = data[0];
+        neighborhoods.value = data[1];
+        crimes.value = data[2];
+    })
+    .catch((error) => {
+        console.log('Error: ', error);
     });
-}
-
-async function fetchJson(url) {
-    return fetch(url).then(response => response.json());
 }
 
 function getNeighborhoodNameById(id, neighborhoods) {
