@@ -1,6 +1,7 @@
 <script setup>
 import { reactive, ref, onMounted } from 'vue';
 import IncidentTable from '../components/IncidentTable.vue';
+import Map from '../components/Map.vue';
 
 let base_url = ref('http://localhost:8001');
 let dialog_err = ref(false);
@@ -240,7 +241,7 @@ function removeTag(tag){
                 </div>
             </div>
             <div class="cell small-8" style="background-color: blue;">
-                <div id="leafletmap"  style="margin:0; padding: 0; height: 100%;"></div>
+                <Map :crimes="crimes" :codes="codes" :neighborhoods="neighborhoods" :map="map"></Map>
             </div>
         </div>
     </div>
