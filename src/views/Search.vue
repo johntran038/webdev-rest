@@ -82,6 +82,7 @@ onMounted(() => {
 
     // Draw markers once data is fetched
     initializeCrimes()
+    /*
     .then(() => {
         map.neighborhood_markers.forEach((marker) => {
             let marker_name = getNeighborhoodNameById(marker.number, neighborhoods.value);
@@ -96,7 +97,7 @@ onMounted(() => {
     .catch(error => {
             console.log('Error:', error);
     });
-    
+    */
 });
 
 // Fetches data from crime API and populates respective data models
