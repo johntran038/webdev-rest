@@ -12,7 +12,9 @@
             </div>
 
             <div class="cell">
-                <iframe width="85%" height="580" src="https://www.youtube.com/embed/oHg5SJYRHA0" frameborder="0" allowfullscreen></iframe>
+                <!-- <iframe width="85%" height="580" src="https://www.youtube.com/embed/oHg5SJYRHA0" frameborder="0" allowfullscreen></iframe> -->
+                <!-- <img src="../../public/img/demo.png" alt="" style="width: 75%; height: 570px; object-fit= ;" class="iframe-img"> -->
+                <img src="../../public/img/demo.png" alt="" style="width: 75%; height: 570px; object-fit: cover;" class="iframe-img">
             </div>
         </div>
     </section>
@@ -241,6 +243,11 @@
     margin-bottom: 3rem;
 }
 iframe{
+    box-shadow: 0px 0px 21px 21px rgba(180, 180, 180, 0.22),
+0px 5px 14px 0px rgb(0, 0, 0);
+    border: 5px solid rgb(0, 0, 0)
+}
+.iframe-img{
     box-shadow: 0px 0px 21px 21px rgba(180, 180, 180, 0.22),
 0px 5px 14px 0px rgb(0, 0, 0);
     border: 5px solid rgb(0, 0, 0)
