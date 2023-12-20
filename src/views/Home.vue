@@ -63,7 +63,7 @@
                                         </div>
                                         <div class="cell medium-7">
                                             <h2>Highest Number of Crimes in St. Paul</h2>
-                                            <p>Captial River, as of today, has the highest number of crimes in St. Paul Minnesota! They have 118 total crimes in that area.</p>
+                                            <p>Out of the 1000 most recent crimes, Capitol River has the highest number of crimes in St. Paul Minnesota. They have 120 total crimes in that area.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -74,8 +74,8 @@
                                             <img src="https://www.icegif.com/wp-content/uploads/2023/01/icegif-162.gif" width="300px" height="300px" />
                                         </div>
                                         <div class="cell medium-7">
-                                            <h2>Tails</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo laboriosam id architecto autem natus et quo tempore? Minus distinctio omnis exercitationem veniam cumque nihil expedita modi atque natus alias!</p>
+                                            <h2>Spooky Month is Consistently Spooky</h2>
+                                            <p>For the past three years, there have been only two murders every year in October.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -86,8 +86,8 @@
                                             <img src="https://s1.zerochan.net/Miles.%22Tails%22.Prower.600.2244411.jpg" width="300px" height="300px" />
                                         </div>
                                         <div class="cell medium-7">
-                                            <h2>Tails</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo laboriosam id architecto autem natus et quo tempore? Minus distinctio omnis exercitationem veniam cumque nihil expedita modi atque natus alias!</p>
+                                            <h2>Arson Cases Spike in Payne/Phalen</h2>
+                                            <p>Payne/Phalen has the most Arson cases out of the most recent 1000 incidents. They have a total of 171 Arson cases.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -98,8 +98,8 @@
                                             <img src="https://www.icegif.com/wp-content/uploads/2023/01/icegif-162.gif" width="300px" height="300px" />
                                         </div>
                                         <div class="cell medium-7">
-                                            <h2>Tails</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo laboriosam id architecto autem natus et quo tempore? Minus distinctio omnis exercitationem veniam cumque nihil expedita modi atque natus alias!</p>
+                                            <h2>Safest Place in Town</h2>
+                                            <p>The Summit Hill neighborhood had the least number (7) of violent crimes for the past year.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -110,8 +110,8 @@
                                             <img src="https://s1.zerochan.net/Miles.%22Tails%22.Prower.600.2244411.jpg" width="300px" height="300px" />
                                         </div>
                                         <div class="cell medium-7">
-                                            <h2>Tails</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo laboriosam id architecto autem natus et quo tempore? Minus distinctio omnis exercitationem veniam cumque nihil expedita modi atque natus alias!</p>
+                                            <h2>Large Number of Murders in Dayton's Bluff</h2>
+                                            <p>Over the past five years, Dayton's Bluff had a total of ten murders which is the most out of the all the St. Paul neighborhoods.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -122,8 +122,8 @@
                                             <img src="https://www.icegif.com/wp-content/uploads/2023/01/icegif-162.gif" width="300px" height="300px" />
                                         </div>
                                         <div class="cell medium-7">
-                                            <h2>Tails</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo laboriosam id architecto autem natus et quo tempore? Minus distinctio omnis exercitationem veniam cumque nihil expedita modi atque natus alias!</p>
+                                            <h2>Theft Soars in Union Park</h2>
+                                            <p>In the past year, Union Park is the neighborhood with the highest amount of theft with a total of 1238 thefts.</p>
                                         </div>
                                     </div>
                                 </div>
