@@ -5,7 +5,6 @@ import IncidentTable from '../components/IncidentTable.vue';
 let base_url = ref('http://localhost:8001');
 let location = ref('');
 let markers = ref([]);
-let current_location = ref('');
 
 // data models
 let crimes = ref([]);
