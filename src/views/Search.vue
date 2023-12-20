@@ -261,6 +261,8 @@ function calculateCrimes(name, crimes, neighborhoods) {
 
 // Function called when user presses 'OK' on dialog box
 function closeDialog() {
+    // reset view
+    map.leaflet.setView([map.center.lat, map.center.lng], map.zoom);
     let loc_input = document.getElementById('dialog-loc');
 
     if(loc_input != null && loc_input.value !== ''){
@@ -313,7 +315,7 @@ function locationZoom(loc){
             let lon = data[0].lon;
 
             //see if it is outside of the map
-            const bounds = map.leaflet.getBounds();
+            const bounds = L.latLngBounds([[44.883658, -93.217977], [45.008206, -92.993787]]);
 
             // Check if the marker is within the map bounds
             const markerLatLng = L.latLng([lat, lon]);
