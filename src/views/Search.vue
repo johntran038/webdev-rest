@@ -3,9 +3,9 @@ import { reactive, ref, onMounted } from 'vue';
 import IncidentTable from '../components/IncidentTable.vue';
 
 let base_url = ref('http://localhost:8001');
-let dialog_err = ref(false);
 let location = ref('');
 let markers = ref([]);
+let current_location = ref('');
 
 // data models
 let crimes = ref([]);
@@ -230,9 +230,11 @@ function drawMarkers() {
                 `${marker_crimes}`
             ).on('click', ()=>{
                 console.log("Pan in!");
-                location.value = marker_name+" Saint Paul, MN";
-                document.getElementById('dialog-loc').value = marker.location;
-                closeDialog();
+                // location.value = marker_name+" Saint Paul, MN";
+                if (document.getElementById('dialog-loc') !== null) {
+                    document.getElementById('dialog-loc').value = marker.location;
+                    closeDialog();
+                }
             });
             markers.value.push(marker_layer);
             map.leaflet.addLayer(marker_layer);
@@ -361,6 +363,8 @@ async function handleMapMove() {
   map.bounds.nw = map.leaflet.getBounds().getNorthWest();
   map.bounds.se = map.leaflet.getBounds().getSouthEast();
   map.center = map.leaflet.getCenter();
+  console.log(map.center);
+  location.value = `${map.center.lat}, ${map.center.lng}`
   updateVisibleCrimes();
 };
 
@@ -368,6 +372,8 @@ async function handleMapZoom() {
   map.bounds.nw = map.leaflet.getBounds().getNorthWest();
   map.bounds.se = map.leaflet.getBounds().getSouthEast();
   map.center = map.leaflet.getCenter();
+  console.log(map.center);
+  location.value = `${map.center.lat}, ${map.center.lng}`
   updateVisibleCrimes();
 };
 
