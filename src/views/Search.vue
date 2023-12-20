@@ -363,7 +363,7 @@ async function handleMapMove() {
   map.bounds.se = map.leaflet.getBounds().getSouthEast();
   map.center = map.leaflet.getCenter();
   console.log(map.center);
-  location.value = `${map.center.lat}, ${map.center.lng}`
+  location.value = `${map.center.lat.toFixed(6)}, ${map.center.lng.toFixed(6)}`
   updateVisibleCrimes();
 };
 
@@ -372,7 +372,7 @@ async function handleMapZoom() {
   map.bounds.se = map.leaflet.getBounds().getSouthEast();
   map.center = map.leaflet.getCenter();
   console.log(map.center);
-  location.value = `${map.center.lat}, ${map.center.lng}`
+  location.value = `${map.center.lat.toFixed(6)}, ${map.center.lng.toFixed(6)}`
   updateVisibleCrimes();
 };
 
