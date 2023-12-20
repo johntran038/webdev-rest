@@ -261,6 +261,9 @@ function calculateCrimes(name, crimes, neighborhoods) {
 
 // Function called when user presses 'OK' on dialog box
 function closeDialog() {
+    // reset view
+    map.leaflet.setView([map.center.lat, map.center.lng], map.zoom);
+    
     let loc_input = document.getElementById('dialog-loc');
 
     if(loc_input != null && loc_input.value !== ''){
