@@ -64,9 +64,10 @@ function getColorCode(code){
 
 <style scoped>
 .box {
-    margin-bottom: 1rem;
     height: 22em;
-    border: 3px solid black;
+    border: 5px solid black;
+    border-left: 5px solid #ca944c;
+    border-bottom: 5px solid #ca944c;
     background-color: tan;
 }
 .box span{

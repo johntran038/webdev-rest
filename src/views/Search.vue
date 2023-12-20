@@ -263,7 +263,6 @@ function calculateCrimes(name, crimes, neighborhoods) {
 function closeDialog() {
     // reset view
     map.leaflet.setView([map.center.lat, map.center.lng], map.zoom);
-    
     let loc_input = document.getElementById('dialog-loc');
 
     if(loc_input != null && loc_input.value !== ''){
@@ -425,21 +424,21 @@ async function updateVisibleCrimes() {
         
         <div class="grid-x">
             <!-- might not need hardcoded height when all filters are added-->
-            <div class="cell large-5 grid-x" style="border: 4px solid black;">
+            <div class="cell CrimeForm large-5 grid-x" style="border: 5px solid black; border-right: none;">
 
                 <div class="cell grid-x">
                     <h1 class="cell dialog-header" style="text-align: center;">St. Paul Crime REST API</h1>
-                    <div class="cell grid-x grid-padding-x">
+                    <div class="cell grid-padding-x">
 
                         <div class="cell grid-x" v-if="!advancedSearch">
                             <label class="cell dialog-label" style="font-weight: bold;">Location: </label>
                             <input id="dialog-loc" class="dialog-input cell" v-model="location" placeholder="Enter a location" />
-                            <button class="advanced-search cell" type="button" @click="setAdvancedSearch(true)" >Advanced Search</button>
+                            <button class="advanced-search cell" type="button" @click="setAdvancedSearch(true)" style="height: 2em;">Advanced Search</button>
                         </div>
                         <div class="cell grid-x" v-if="advancedSearch">
                             <div class="cell">
                                 <button class="advanced-search cell"
-                                type="button" @click="setAdvancedSearch(false)" >Revert to Searchbar</button>
+                                type="button" @click="setAdvancedSearch(false)" style="height: 2em;">Revert to Searchbar</button>
                             </div>
 
                             <!-- Advanced FILTERS -->
@@ -486,13 +485,13 @@ async function updateVisibleCrimes() {
                                 <input v-model="limit" class="cell input-filter" type="number" id="limit" placeholder="1000">
                             </div>
                         </div>
-                        <button class="button cell" type="button" @click="closeDialog">GO</button>
+                        <button class="button cell" type="button" @click="closeDialog" style="height: 3.5em;">GO</button>
 
                     </div>
 
                 </div>
 
-                <div class="cell small-12" style="margin-top:1rem; padding: 1rem;">
+                <div class="cell tag-button-block small-12" style="padding: 1rem;" v-if="advancedSearch">
                     <div class="button tag-button"
                         v-for="tag in tags" >
                             {{ tag.text }}
@@ -502,7 +501,7 @@ async function updateVisibleCrimes() {
             </div>
 
             <div class="cell large-7">
-                <div id="leafletmap"  style="margin:0; padding: 0; height: 700px; border: 4px solid black"></div>
+                <div id="leafletmap"  style="margin:0; padding: 0; height: 740px; border: 5px solid black;"></div>
             </div>
 
         </div>
@@ -514,3 +513,23 @@ async function updateVisibleCrimes() {
         </div>
     </div>
 </template>
+
+<style scoped>
+/* @media only screen and (min-width: 1025px){
+    .CrimeForm{
+
+    }
+} */
+@media only screen and (max-width: 1023px){
+    .CrimeForm{
+        border: 5px solid black!important;
+        border-bottom: none!important;
+    }
+}
+
+.tag-button-block{
+    height: 9em;
+    overflow: scroll;
+    background-color: lightgray;
+}
+</style>

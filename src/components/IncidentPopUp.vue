@@ -102,7 +102,6 @@ async function markerMap(address, code, neighborhood_number, neighborhoods){
 }
 
 
-//--TESTING------------------------------------------
 function allEqual(input) {
     return input.split('').every(char => char === input[0]);
 }
@@ -119,7 +118,6 @@ function completeAddress(block, code, neighborhood_number, neighborhoods){
     markerMap(blockArr.join(' '), code, neighborhood_number, neighborhoods);
     return blockArr.join(' ');
 }
-//--TESTING------------------------------------------
 
 function getColorCode(code){
     //Murder
@@ -234,13 +232,14 @@ function getNeighborhoodNameById(id, neighborhoods) {
 }
 .popup-inner{
 	background: tan;
-    border: 4px solid rgb(0, 0, 0);
+    border: 5px solid rgb(0, 0, 0);
     z-index: 99999;
+    margin: 1em;
 }
 
 .popup-close,
 .popup-closeDel{
-    border: 4px solid rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 1em;
     padding: 1em;
     font-weight: bold;
@@ -285,6 +284,6 @@ function getNeighborhoodNameById(id, neighborhoods) {
     height: 250px;
     width: 100%;
     display: block;
-    border: 4px solid rgb(0, 0, 0);
+    border: 5px solid rgb(0, 0, 0);
 }
 </style>

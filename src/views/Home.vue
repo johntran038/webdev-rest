@@ -59,7 +59,7 @@
                                 <div class="slide slide_1 grid-container">
                                     <div class="slide-content grid-x grid-margin-x">
                                         <div class="cell medium-5">
-                                            <img src="../../public/img/most-crimes.png" width="300px" height="300px" alt="Crime Image"/>
+                                            <img src="../../public/img/most-crimes.png" width="300px" height="300px" alt="Crime Image by Fran couto" draggable="false" />
                                         </div>
                                         <div class="cell medium-7">
                                             <h2>Highest Number of Crimes in St. Paul</h2>
@@ -71,7 +71,7 @@
                                 <div class="slide slide_2 grid-container">
                                     <div class="slide-content grid-x grid-margin-x">
                                         <div class="cell medium-5">
-                                            <img src="../../public/img/spooky.png" width="300px" height="300px" alt="Grim Reaper Image"/>
+                                            <img src="../../public/img/spooky.png" width="300px" height="300px" alt="Grim Reaper Image by Funtasticon" draggable="false" />
                                         </div>
                                         <div class="cell medium-7">
                                             <h2>Spooky Month is Consistently Spooky</h2>
@@ -83,7 +83,7 @@
                                 <div class="slide slide_3 grid-container">
                                     <div class="slide-content grid-x grid-margin-x">
                                         <div class="cell medium-5">
-                                            <img src="../../public/img/arson.png" width="300px" height="300px" alt="Arson Image"/>
+                                            <img src="../../public/img/arson.png" width="300px" height="300px" alt="Arson Image by Fran couto" draggable="false" />
                                         </div>
                                         <div class="cell medium-7">
                                             <h2>Arson Cases Spike in Payne/Phalen</h2>
@@ -95,11 +95,11 @@
                                 <div class="slide slide_4 grid-container">
                                     <div class="slide-content grid-x grid-margin-x">
                                         <div class="cell medium-5">
-                                            <img src="../../public/img/safe.png" width="300px" height="300px" alt="Safest Place Image"/>
+                                            <img src="../../public/img/safe.png" width="300px" height="300px" alt="Safest Place Image by Fran couto" draggable="false" />
                                         </div>
                                         <div class="cell medium-7">
                                             <h2>Safest Place in Town</h2>
-                                            <p>The Summit Hill neighborhood had the least number (7) of violent crimes for the past year.</p>
+                                            <p>The Summit Hill neighborhood had the least number of violent crimes (7) for the past year.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -107,10 +107,10 @@
                                 <div class="slide slide_5 grid-container">
                                     <div class="slide-content grid-x grid-margin-x">
                                         <div class="cell medium-5">
-                                            <img src="../../public/img/murder.png" width="300px" height="300px" alt="Murder Image"/>
+                                            <img src="../../public/img/murder.png" width="300px" height="300px" alt="Murder Image by Aldric Rodriguez" draggable="false" />
                                         </div>
                                         <div class="cell medium-7">
-                                            <h2>Large Number of Murders in Dayton's Bluff</h2>
+                                            <h2>Lots of Murders in Dayton's Bluff</h2>
                                             <p>Over the past five years, Dayton's Bluff had a total of ten murders which is the most out of the all the St. Paul neighborhoods.</p>
                                         </div>
                                     </div>
@@ -119,7 +119,7 @@
                                 <div class="slide slide_6 grid-container">
                                     <div class="slide-content grid-x grid-margin-x">
                                         <div class="cell medium-5">
-                                            <img src="../../public/img/theft.png" width="300px" height="300px" alt="Theft Image"/>
+                                            <img src="../../public/img/theft.png" width="300px" height="300px" alt="Theft Image by Fran couto" draggable="false" />
                                         </div>
                                         <div class="cell medium-7">
                                             <h2>Theft Soars in Union Park</h2>
@@ -241,8 +241,8 @@
     margin-bottom: 3rem;
 }
 iframe{
-    box-shadow: 0px 0px 21px 21px rgba(0, 183, 255, 0.22),
-0px 5px 14px 0px rgb(0, 191, 255);
+    box-shadow: 0px 0px 21px 21px rgba(180, 180, 180, 0.22),
+0px 5px 14px 0px rgb(0, 0, 0);
     border: 5px solid rgb(0, 0, 0)
 }
 
@@ -394,7 +394,7 @@ iframe{
    text-decoration: none;
 }
 #slides {
-    border: 3px solid #ccc;
+    border: 5px solid #ccc;
 }
 #overflow {
     display: block;
