@@ -26,12 +26,12 @@
                 <h4>Built With</h4>
             </div>
             <div class="cell tools">
-                <img src="https://vuejs.org/images/logo.png" draggable="false" />
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png" draggable="false" />
-                <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.png" draggable="false" />
-                <img src="https://static-00.iconduck.com/assets.00/sqlite-icon-1831x2048-7upf1m3n.png" draggable="false" />
-                <img src="https://camo.githubusercontent.com/6463de5386f43d6c67645ac94fc7a0fb309432e8f0b166ce2ef423057ea7bc0f/68747470733a2f2f77696b692e6f70656e7374726565746d61702e6f72672f772f696d616765732f372f37392f5075626c69632d696d616765732d6f736d5f6c6f676f2e737667" draggable="false" />
-                <img src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/096/thumb/leaflet.png" draggable="false" />
+                <img src="https://vuejs.org/images/logo.png" draggable="false" alt="vue logo"/>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png" draggable="false" alt="nodejs logo"/>
+                <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.png" draggable="false" alt="express logo"/>
+                <img src="https://static-00.iconduck.com/assets.00/sqlite-icon-1831x2048-7upf1m3n.png" draggable="false" alt="sqlite3 logo"/>
+                <img src="https://camo.githubusercontent.com/6463de5386f43d6c67645ac94fc7a0fb309432e8f0b166ce2ef423057ea7bc0f/68747470733a2f2f77696b692e6f70656e7374726565746d61702e6f72672f772f696d616765732f372f37392f5075626c69632d696d616765732d6f736d5f6c6f676f2e737667" draggable="false" alt="Nominatim Logo"/>
+                <img src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/096/thumb/leaflet.png" draggable="false" alt="leaflet"/>
             </div>
         </div>
     </section>
@@ -59,7 +59,7 @@
                                 <div class="slide slide_1 grid-container">
                                     <div class="slide-content grid-x grid-margin-x">
                                         <div class="cell medium-5">
-                                            <img src="https://www.choicehotels.com/cms/images/choice-hotels/explore/img_minneapolis-minnesota-downtown_sunset/img_minneapolis-minnesota-downtown_sunset.jpg" width="300px" height="300px" />
+                                            <img src="../../public/img/most-crimes.png" width="300px" height="300px" alt="Crime Image"/>
                                         </div>
                                         <div class="cell medium-7">
                                             <h2>Highest Number of Crimes in St. Paul</h2>
@@ -71,7 +71,7 @@
                                 <div class="slide slide_2 grid-container">
                                     <div class="slide-content grid-x grid-margin-x">
                                         <div class="cell medium-5">
-                                            <img src="https://www.icegif.com/wp-content/uploads/2023/01/icegif-162.gif" width="300px" height="300px" />
+                                            <img src="../../public/img/spooky.png" width="300px" height="300px" alt="Grim Reaper Image"/>
                                         </div>
                                         <div class="cell medium-7">
                                             <h2>Spooky Month is Consistently Spooky</h2>
@@ -83,7 +83,7 @@
                                 <div class="slide slide_3 grid-container">
                                     <div class="slide-content grid-x grid-margin-x">
                                         <div class="cell medium-5">
-                                            <img src="https://s1.zerochan.net/Miles.%22Tails%22.Prower.600.2244411.jpg" width="300px" height="300px" />
+                                            <img src="../../public/img/arson.png" width="300px" height="300px" alt="Arson Image"/>
                                         </div>
                                         <div class="cell medium-7">
                                             <h2>Arson Cases Spike in Payne/Phalen</h2>
@@ -95,7 +95,7 @@
                                 <div class="slide slide_4 grid-container">
                                     <div class="slide-content grid-x grid-margin-x">
                                         <div class="cell medium-5">
-                                            <img src="https://www.icegif.com/wp-content/uploads/2023/01/icegif-162.gif" width="300px" height="300px" />
+                                            <img src="../../public/img/safe.png" width="300px" height="300px" alt="Safest Place Image"/>
                                         </div>
                                         <div class="cell medium-7">
                                             <h2>Safest Place in Town</h2>
@@ -107,7 +107,7 @@
                                 <div class="slide slide_5 grid-container">
                                     <div class="slide-content grid-x grid-margin-x">
                                         <div class="cell medium-5">
-                                            <img src="https://s1.zerochan.net/Miles.%22Tails%22.Prower.600.2244411.jpg" width="300px" height="300px" />
+                                            <img src="../../public/img/murder.png" width="300px" height="300px" alt="Murder Image"/>
                                         </div>
                                         <div class="cell medium-7">
                                             <h2>Large Number of Murders in Dayton's Bluff</h2>
@@ -119,7 +119,7 @@
                                 <div class="slide slide_6 grid-container">
                                     <div class="slide-content grid-x grid-margin-x">
                                         <div class="cell medium-5">
-                                            <img src="https://www.icegif.com/wp-content/uploads/2023/01/icegif-162.gif" width="300px" height="300px" />
+                                            <img src="../../public/img/theft.png" width="300px" height="300px" alt="Theft Image"/>
                                         </div>
                                         <div class="cell medium-7">
                                             <h2>Theft Soars in Union Park</h2>
@@ -162,7 +162,7 @@
 
                     <div class="profile">
                         <img src="https://avatars.githubusercontent.com/u/123771828?v=4"
-                        class="profile-img" draggable="false" loading="lazy"/>
+                        class="profile-img" draggable="false" loading="lazy" alt="Francis' Profile"/>
                         <h3 class="user-name">Francis T.</h3>
                         <h5>Group Member</h5>
                     </div>
@@ -170,15 +170,15 @@
 
                     <div class="profile">
                         <img src="https://avatars.githubusercontent.com/u/123798873?v=4"
-                        class="profile-img" draggable="false" loading="lazy"/>
+                        class="profile-img" draggable="false" loading="lazy" alt="John's Profile"/>
                         <h3 class="user-name">John T.</h3>
                         <h5>Group Member</h5>
                     </div>
 
 
                     <div class="profile">
-                        <img src="https://avatars.githubusercontent.com/u/124289027?v=4"
-                        class="profile-img" draggable="false" loading="lazy"/>
+                        <img src="../../public/img/profile/matt.jpg"
+                        class="profile-img" draggable="false" loading="lazy" alt="Matt's Profile"/>
                         <h3 class="user-name">Matt L.</h3>
                         <h5>Group Member</h5>
                     </div>
@@ -186,7 +186,7 @@
 
                     <div class="profile">
                         <img src="https://tmarrinan.github.io/images/home/cover_photo_02.jpg"
-                        class="profile-img" draggable="false" loading="lazy"/>
+                        class="profile-img" draggable="false" loading="lazy" alt="Marrinan's Profile"/>
                         <h3 class="user-name">Tommy M.</h3>
                         <h5>CS Professor</h5>
                     </div>
