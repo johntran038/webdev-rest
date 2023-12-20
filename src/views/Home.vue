@@ -8,13 +8,11 @@
             </div>
             <div class="cell Buttons">
                 <router-link to="/Search" class="navButton"><button class="titleButton Search">Search</button></router-link>
-                <a href="https://www.youtube.com/embed/uHgt8giw1LY?autoplay=1&mute=1" target="_blank"><button class="titleButton"><ion-icon name="play-outline"></ion-icon> Watch Overview</button></a>
+                <a href="https://www.youtube.com/watch?v=wLrTDwNVQbQ" target="_blank"><button class="titleButton"><ion-icon name="play-outline"></ion-icon> Watch Overview</button></a>
             </div>
 
             <div class="cell">
-                <!-- <iframe width="85%" height="580" src="https://www.youtube.com/embed/oHg5SJYRHA0" frameborder="0" allowfullscreen></iframe> -->
-                <!-- <img src="../../public/img/demo.png" alt="" style="width: 75%; height: 570px; object-fit= ;" class="iframe-img"> -->
-                <img src="../../public/img/demo.png" alt="" style="width: 75%; height: 570px; object-fit: cover;" class="iframe-img">
+                <iframe width="85%" height="560" src="https://www.youtube.com/embed/wLrTDwNVQbQ" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
     </section>
