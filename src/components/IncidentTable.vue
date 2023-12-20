@@ -75,7 +75,7 @@ function clickPrev(){
 
 
     <div class="cell" style="text-align: center; padding: 1em;">
-        <h2 style="font-size: 2rem; font-weight: bold;">Crimes Database</h2>
+        <h2 style="font-size: 2rem; font-weight: bold;">Reported Incidents</h2>
         <h3 v-if="crimes.length !== 0" style="font-size: 1.3rem; font-weight: bold;">Current Results: {{ crimes.length }}</h3>
         <h3 v-else style="font-size: 1.3rem; font-weight: bold;">No Results</h3>
     </div>
@@ -100,7 +100,7 @@ function clickPrev(){
     <div v-else class="cell grid-x grid-padding-x" style="margin-bottom: 5em;">
         <img src="https://media.tenor.com/LqwjX4mJgdcAAAAj/try-again-lee.gif" draggable="false" />
     </div>
-    <div class="grid-x grid-padding-x small-up-1 medium-up-2 large-up-3" v-if="crimes.length > 0">
+    <div class="grid-x grid-padding-x small-up-1 medium-up-2 large-up-3" v-if="crimes.length > 0" style="margin-bottom: 3em;">
         <IncidentRow v-for="incident in crimes.slice(startItem, endItem)" :incident="incident" :codes="codes" :neighborhoods="neighborhoods"></IncidentRow>
     </div>
 
@@ -138,12 +138,14 @@ function clickPrev(){
 }
 
 .Tablebuttons{
-    padding: 2em;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 .Tablebuttons button{
-    width: 90%;
+    width: 13em;
+    margin-bottom: 1em;
     padding: 1em;
-    margin: 1em;
     font-weight: bold;
     border: 2px solid black;
     border-radius: 1em;

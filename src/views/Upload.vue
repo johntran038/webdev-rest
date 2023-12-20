@@ -93,21 +93,21 @@ async function fetchJson(url) {
                     <p class="dialog-caseNum" v-if="dialog_caseNumCheck" style="color: orange">Error: Case Number already exist.</p>
                     <p class="dialog-success" v-if="dialog_success" style="color: green">Success!</p>
                 </div>
-                <div class="cell">
+                <div class="cell grid-x" style="margin-bottom: .5em;">
                     <label for="caseNum">Case Number: <span style="color: red; font-weight: bold">*</span></label><br>
                     <input type="number" id="caseNum" name="caseNum" minlength="8" maxlength="8" required v-model="caseNum" placeholder="XXXXXXXX"><br>
                 </div>
 
-                <div class="cell medium-6">
+                <div class="cell medium-6 grid-x" style="margin-bottom: .5em;">
                     <label for="date">Date of Incident: <span style="color: red; font-weight: bold">*</span></label><br>
                     <input type="date" id="date" name="date" required v-model="dateI"><br>
                 </div>
-                <div class="cell medium-6">
+                <div class="cell medium-6 grid-x" style="margin-bottom: .5em;">
                     <label for="time">Time of Incident: <span style="color: red; font-weight: bold">*</span></label><br>
                     <input type="time" id="time" name="time" required v-model="timeI"><br>
                 </div>
 
-                <div class="cell medium-12">
+                <div class="cell grid-x" style="margin-bottom: .5em;">
                     <label for="incident-type">Incident Type: <span style="color: red; font-weight: bold">*</span></label><br>
                     <select v-model="incidentTypeModel" name="" id="incident-type" @change="updateIncidentCode(incidentTypeModel)">
                         <option selected disabled value="">Select an Incident Type</option>
@@ -127,18 +127,17 @@ async function fetchJson(url) {
                         </option>
                     </select>
                 </div>
-
-                <div class="cell medium-12">
+                <div class="cell grid-x" style="margin-bottom: .5em;">
                     <label for="Incident">Description: <span style="color: red; font-weight: bold">*</span></label><br>
-                <input type="text" id="Incident" name="Incident" required v-model="IncidentName" placeholder="EX: Robbery"><br>
+                    <input type="text" id="Incident" name="Incident" required v-model="IncidentName" placeholder="EX: Robbery"><br>
                 </div>
 
-                <div class="cell">
+                <div class="cell grid-x" style="margin-bottom: .5em;">
                     <label for="Police_grid">Police Grid: <span style="color: red; font-weight: bold">*</span></label><br>
                     <input type="number" id="Police_grid" name="Police_grid" required v-model="Police_grid" placeholder="XXX"><br>
                 </div>
 
-                <div class="cell medium-6">
+                <div class="cell medium-6 grid-x" style="margin-bottom: .5em;">
                     <label for="neighborhoodNum">Neighborhood Number: <span style="color: red; font-weight: bold">*</span></label><br>
                     <select id="neighborhoodNum" name="neighborhoodNum" v-model="NeighNum">
                         <option value="1">1</option>
@@ -161,7 +160,7 @@ async function fetchJson(url) {
                     </select>
                 </div>
 
-                <div class="cell medium-6">
+                <div class="cell medium-6 grid-x" style="margin-bottom: .5em;">
                     <label for="address">Address of the Incident: <span style="color: red; font-weight: bold">*</span></label><br>
                     <input type="text" id="address" name="address" required v-model="AddressI" placeholder="EX: 123 Street Ave"><br>
                 </div>
