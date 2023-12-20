@@ -201,7 +201,7 @@ function getNeighborhoodNameById(id, neighborhoods) {
                 <div class="cell medium-8">
                     <div class="mapPopup" id="leafletmap2"></div>
                 </div>
-                <h4 class="cell">Address: {{ completeAddress(incident.block, incident.code, incident.neighborhood_number, neighborhoods)}}</h4>
+                <h4 class="cell">Address: {{ completeAddress(incident.block, incident.code, incident.neighborhood_number, neighborhoods)}} / {{ getNeighborhoodNameById(incident.neighborhood_number, neighborhoods) }}</h4>
 
 
                 <div class="cell options">
