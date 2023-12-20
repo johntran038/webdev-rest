@@ -313,7 +313,7 @@ function locationZoom(loc){
             let lon = data[0].lon;
 
             //see if it is outside of the map
-            const bounds = map.leaflet.getBounds();
+            const bounds = L.latLngBounds([[44.883658, -93.217977], [45.008206, -92.993787]]);
 
             // Check if the marker is within the map bounds
             const markerLatLng = L.latLng([lat, lon]);
