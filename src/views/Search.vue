@@ -21,6 +21,7 @@ let codeCategories = reactive([
 ]);
 let startDate = ref();
 let endDate = ref();
+let date_err = ref(false);
 let limit = ref();
 let incidentModel = ref('');
 let neighborhoodModel = ref('');
@@ -275,11 +276,15 @@ function closeDialog() {
         let end = (endDate.value != null && endDate.value != '');
         let startValidDate = !(new Date(startDate.value) == 'Invalid Date');
         let endValidDate = !(new Date(endDate.value) == 'Invalid Date');
-        let startBeforeEnd = new Date(startDate.value) < new Date(endDate.value);
+        let startBeforeEnd = new Date(startDate.value) <= new Date(endDate.value);
         if(start && end){
             if(startValidDate && endValidDate && startBeforeEnd){
                 collectiveInfo.push({type: 'start_date', value: startDate.value});
                 collectiveInfo.push({type: 'end_date', value: endDate.value});
+                date_err.value = false;
+            } else {
+                date_err.value = true;
+                return;
             }
         }else if(start && startValidDate){
             collectiveInfo.push({type: 'start_date', value: startDate.value});
@@ -290,7 +295,7 @@ function closeDialog() {
         if(limit.value != null){
             collectiveInfo.push({type:'limit', value: limit.value});
         }
-        console.log(collectiveInfo);
+        console.log("filters: ",collectiveInfo);
         updateCrimes(collectiveInfo);
     }
 }
@@ -468,6 +473,9 @@ async function updateVisibleCrimes() {
                                 <div class="cell medium-6">
                                     <label for="end-date" class="cell" style="font-weight: bold;">End Date: </label>
                                     <input v-model="endDate" class="input-filter" type="date" id="end-date" pattern="\d{4}-\d{2}-\d{2}">
+                                </div>
+                                <div class="cell" v-if="date_err">
+                                    <p style="color: red;">Error: Date range must be valid</p>
                                 </div>
                             </div>
                             <div class="cell grid-x">
